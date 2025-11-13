@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homepage_background">
+
+    <LinearLayout android:id="@+id/linear_Heading_bar"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_15pxh"
+        android:layout_marginStart="@dimen/_15pxh"
+        android:layout_marginTop="@dimen/_37pxv"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout android:id="@+id/linear_inner_username"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.91"
+            android:layout_width="0dp"
+            android:orientation="horizontal">
+<!--            <ImageView-->
+<!--                android:id="@+id/imageEllipseOne"-->
+<!--                android:layout_height="@dimen/_55pxh"-->
+<!--                android:layout_width="@dimen/_60pxh"-->
+<!--                android:src="@drawable/user_img1"-->
+<!--                android:scaleType="centerCrop"-->
+<!--                app:circular="@{true}"-->
+<!--                tools:src="@drawable/user_img1"-->
+<!--                android:contentDescription="@string/user_icon" />-->
+            <TextView android:ellipsize="end"
+                android:id="@+id/userName"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_13pxv"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_marginTop="@dimen/_16pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@string/lbl_hi_User"
+                android:textSize="@dimen/_20pxh"
+                android:textColor="@color/black_901"
+                android:fontFamily="@font/inter"
+                tools:targetApi="p"
+                android:textFontWeight="500"/>
+
+        </LinearLayout>
+        <ImageView android:id="@+id/imageMenuThree"
+            android:layout_height="@dimen/_13pxh"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_3pxh"
+            android:layout_marginStart="@dimen/_116pxh"
+            android:layout_marginTop="@dimen/_21pxv"
+            android:layout_width="@dimen/_18pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_82menu3"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_82menu3"/>
+    </LinearLayout>
+
+    <HorizontalScrollView android:fillViewport="true"
+        android:gravity="end"
+        android:id="@+id/horizontalScroll_advertising_img"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10pxh"
+        android:layout_marginTop="@dimen/_135pxv"
+        android:layout_width="match_parent"
+        android:scrollbars="none">
+        <LinearLayout android:id="@+id/linear_Home_offers"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+
+            <VideoView
+                android:id="@+id/video_station"
+                android:layout_width="@dimen/_330pxh"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@raw/delhi_metro"
+                tools:ignore="ContentDescription" />
+            <ImageView android:id="@+id/img_near_metro"
+                android:layout_height="@dimen/_160pxh"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_width="@dimen/_330pxh"
+                android:scaleType="fitXY"
+                tools:ignore="ContentDescription"
+                android:src="@drawable/img_rectangle977"/>
+            <ImageView android:id="@+id/img_food"
+                android:layout_height="@dimen/_160pxh"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_width="@dimen/_330pxh"
+                android:scaleType="fitXY"
+                tools:ignore="ContentDescription"
+                android:src="@drawable/img_rectangle978" />
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <FrameLayout
+        android:id="@+id/frameStack"
+        android:layout_marginTop="@dimen/_388pxh"
+        android:layout_height="@dimen/_64pxv"
+        android:layout_width="@dimen/_66pxh"
+        android:background="@drawable/rectangle_gradient_s_white_a701_e_blue_300_radius_32"
+        android:layout_marginStart="@dimen/_20sp"/>
+    <ImageView android:id="@+id/imageImageFour"
+        android:layout_gravity="bottom|center"
+        android:layout_height="@dimen/_44pxh"
+        android:layout_marginEnd="@dimen/_28sp"
+        android:layout_marginStart="@dimen/_28sp"
+        android:layout_marginTop="@dimen/_397pxh"
+        android:layout_width="@dimen/_48pxh"
+        android:scaleType="fitXY"
+        tools:ignore="ContentDescription"
+        android:src="@drawable/img_image4"/>
+
+    <TextView
+        android:id="@+id/txtPlan_your_route"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10pxh"
+        android:layout_marginTop="@dimen/_455pxv"
+        android:fontFamily="@font/inter"
+        android:gravity="end"
+        android:text="@string/lbl_plan_your_route"
+        android:textColor="@color/black_901"
+        android:textFontWeight="500"
+        android:textSize="@dimen/_13pxh"
+        tools:targetApi="p"
+        tools:text="@string/lbl_plan_your_route" />
+
+
+
+
+
+    <FrameLayout android:id="@+id/frameStackOne"
+        android:layout_gravity="start"
+        android:layout_marginTop="@dimen/_388pxh"
+        android:layout_height="@dimen/_64pxv"
+        android:layout_width="@dimen/_66pxh"
+        android:background="@drawable/rectangle_gradient_s_white_a701_e_blue_300_radius_32_5"
+        android:layout_marginStart="@dimen/_120pxh"/>
+    <ImageView android:id="@+id/imageImageFourOne"
+        android:layout_gravity="bottom|center"
+        android:layout_height="@dimen/_44pxh"
+        android:layout_marginEnd="@dimen/_130pxh"
+        android:layout_marginStart="@dimen/_130pxh"
+        android:layout_width="@dimen/_48pxh"
+        android:layout_marginTop="@dimen/_397pxh"
+        android:scaleType="fitXY"
+        tools:ignore="ContentDescription"
+        android:src="@drawable/img_metro_button_img"/>
+    <TextView android:gravity="end"
+        android:id="@+id/txtMetroMap"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_9pxh"
+        android:layout_marginStart="@dimen/_120pxh"
+        android:layout_marginTop="@dimen/_455pxv"
+        android:layout_width="wrap_content"
+        android:text="@string/lbl_metro_map"
+        tools:text="@string/lbl_metro_map"
+        android:textSize="@dimen/_13pxh"
+        android:textColor="@color/black_901"
+        android:fontFamily="@font/inter"
+        tools:targetApi="p"
+        android:textFontWeight="500"/>
+
+
+
+
+    <FrameLayout android:id="@+id/frameStackTwo"
+        android:layout_gravity="start"
+        android:layout_marginTop="@dimen/_388pxh"
+        android:layout_height="@dimen/_64pxv"
+        android:layout_width="@dimen/_66pxh"
+
+        android:background="@drawable/rectangle_gradient_s_white_a701_e_blue_300_radius_32_5"
+        android:layout_marginStart="@dimen/_320pxh" />
+    <ImageView android:id="@+id/imageImageFive"
+        android:layout_gravity="bottom|center"
+        android:layout_height="@dimen/_47pxh"
+        android:layout_marginEnd="@dimen/_330pxh"
+        android:layout_marginStart="@dimen/_330pxh"
+        android:layout_marginTop="@dimen/_397pxh"
+        android:layout_width="@dimen/_46pxh"
+        android:scaleType="fitXY"
+        android:src="@drawable/metro_card_logo"
+        tools:ignore="ContentDescription" />
+    <TextView android:gravity="center_horizontal"
+        android:id="@+id/txtFoodDelivery"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_6pxh"
+        android:layout_marginStart="@dimen/_213pxh"
+        android:layout_marginTop="@dimen/_455pxv"
+        android:layout_width="wrap_content"
+        android:text="@string/lbl_food_delivery"
+        tools:text="@string/lbl_food_delivery"
+        android:textSize="@dimen/_13pxh"
+        android:textColor="@color/black_901"
+        android:fontFamily="@font/inter"
+        android:textFontWeight="500"
+        tools:targetApi="p"/>
+
+
+
+    <FrameLayout android:id="@+id/metro_card"
+        android:layout_gravity="start"
+        android:layout_marginTop="@dimen/_388pxh"
+        android:layout_height="@dimen/_64pxv"
+        android:layout_width="@dimen/_66pxh"
+        android:layout_marginStart="@dimen/_220pxh"
+        android:background="@drawable/rectangle_gradient_s_white_a701_e_blue_300_radius_32_5"/>
+    <ImageView android:id="@+id/imageIcon"
+        android:layout_gravity="bottom|center"
+        android:layout_height="@dimen/_40pxh"
+        android:layout_marginEnd="@dimen/_230pxh"
+        android:layout_marginStart="@dimen/_230pxh"
+        android:layout_marginTop="@dimen/_398pxh"
+        android:layout_width="@dimen/_47pxh"
+        android:scaleType="fitXY"
+        tools:ignore="ContentDescription"
+        android:src="@drawable/food_logo"/>
+    <TextView android:gravity="end"
+        android:id="@+id/txt_Metro_card"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_8pxh"
+        android:layout_marginStart="@dimen/_320pxh"
+        android:layout_marginTop="@dimen/_455pxv"
+        android:layout_width="wrap_content"
+        android:text="@string/lbl_metro_card"
+        tools:text="@string/lbl_metro_card"
+        android:textSize="@dimen/_13pxh"
+        android:textColor="@color/black_901"
+        android:fontFamily="@font/inter"
+        tools:targetApi="p"
+        android:textFontWeight="500"/>
+
+    <TextView android:ellipsize="end"
+        android:id="@+id/txtNear_by_stations"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_29pxh"
+        android:layout_marginStart="@dimen/_29pxh"
+        android:layout_marginTop="@dimen/_490pxv"
+        android:layout_width="wrap_content"
+        android:singleLine="true"
+        android:text="@string/msg_nearby_stations"
+        android:textSize="@dimen/_20pxh"
+        android:textColor="@color/black_901"
+        android:fontFamily="@font/inter"
+        android:textFontWeight="500"
+        tools:targetApi="p"
+        tools:text="@string/msg_nearby_stations"/>
+<!--    <ImageView android:id="@+id/near_by_station"-->
+<!--        android:layout_height="@dimen/_160pxh"-->
+<!--        android:layout_width="@dimen/_360pxh"-->
+<!--        android:layout_marginTop="@dimen/_530pxh"-->
+<!--        android:layout_marginStart="@dimen/_25pxh"-->
+<!--        android:scaleType="fitXY"-->
+<!--        tools:ignore="ContentDescription"-->
+<!--        android:src="@drawable/img_rectangle977"/>-->
+    <HorizontalScrollView android:fillViewport="true"
+        android:gravity="end"
+        android:id="@+id/horizontalScroll_nearbyStation_img"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10pxh"
+        android:layout_marginTop="@dimen/_550pxv"
+        android:layout_width="match_parent"
+        android:scrollbars="none">
+        <LinearLayout android:id="@+id/linear_Home_near_station"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView android:id="@+id/img_near_station"
+                android:layout_height="@dimen/_160pxh"
+                android:layout_width="@dimen/_200pxh"
+                android:scaleType="fitXY"
+                tools:ignore="ContentDescription"
+                android:src="@drawable/delhi_igi_airport"/>
+            <ImageView android:id="@+id/img_near_by_metro"
+                android:layout_height="@dimen/_160pxh"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_width="@dimen/_200pxh"
+                android:scaleType="fitXY"
+                tools:ignore="ContentDescription"
+                android:src="@drawable/delhi_aiims"/>
+            <ImageView android:id="@+id/img_near_by_station_"
+                android:layout_height="@dimen/_160pxh"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_width="@dimen/_200pxh"
+                android:scaleType="fitXY"
+                tools:ignore="ContentDescription"
+                android:src="@drawable/delhi_chandni_chowk" />
+            <ImageView android:id="@+id/_near_by_station_img"
+                android:layout_height="@dimen/_160pxh"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_width="@dimen/_200pxh"
+                android:scaleType="fitXY"
+                tools:ignore="ContentDescription"
+                android:src="@drawable/delhi_botanical_garden" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_43pxv"
+        android:padding="8dp"
+        android:text="Log Out"
+        android:layout_marginStart="270dp"
+        android:textSize="14sp"
+        app:cornerRadius="15dp" />
+
+</RelativeLayout>
+
+

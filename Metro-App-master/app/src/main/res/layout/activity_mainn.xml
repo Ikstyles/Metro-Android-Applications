@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainShortest"
+    android:background="@drawable/homepage_background">
+
+    <!-- Button to list all stations -->
+    <Button
+        android:id="@+id/listStationsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List All Stations"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Button to display metro map -->
+    <Button
+        android:id="@+id/displayMapButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Display Metro Map"
+        android:layout_below="@id/listStationsButton"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- EditText for source station -->
+    <EditText
+        android:id="@+id/sourceEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter source station"
+        android:drawableLeft="@drawable/baseline_add_location_"
+        android:drawablePadding="8dp"
+        android:layout_below="@id/displayMapButton"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- EditText for destination station -->
+    <EditText
+        android:id="@+id/destinationEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter destination station"
+        android:drawableLeft="@drawable/baseline_add_location_"
+        android:drawablePadding="8dp"
+        android:layout_below="@id/sourceEditText"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Button to find shortest distance -->
+    <Button
+        android:id="@+id/findShortestDistanceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Shortest Distance"
+        android:layout_below="@id/destinationEditText"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Button to find shortest time -->
+    <Button
+        android:id="@+id/findShortestTimeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Shortest Time"
+        android:layout_below="@id/findShortestDistanceButton"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Button to find shortest path (distance-wise) -->
+    <Button
+        android:id="@+id/findShortestPathDistanceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Shortest Path (Distance-wise)"
+        android:layout_below="@id/findShortestTimeButton"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Button to find shortest path (time-wise) -->
+    <Button
+        android:id="@+id/findShortestPathTimeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Shortest Path (Time-wise)"
+        android:layout_below="@id/findShortestPathDistanceButton"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- TextView to display the result -->
+    <ListView
+        android:id="@+id/resultListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/findShortestPathTimeButton"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:divider="@color/black"
+        android:dividerHeight="2dp" />
+
+
+</RelativeLayout>

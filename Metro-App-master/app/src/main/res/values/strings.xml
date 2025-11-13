@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Find My Metro</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+    <string name="lbl_two_way">Two way</string>
+    <string name="lbl_one_way">One way</string>
+    <string name="lbl_date">Date</string>
+    <string name="lbl_food_delivery">Food Delivery</string>
+    <string name="lbl_search">Search</string>
+    <string name="lbl_van_den_heuvel">Van den Heuvel</string>
+    <string name="msg_forget_password">Forget password ?</string>
+    <string name="lbl_taj_agra">Taj Agra</string>
+    <string name="lbl_or_sign_in_with">Or Sign in with</string>
+    <string name="lbl_metro_map">Metro Map</string>
+    <string name="msg_nearby_stations">Nearby stations!</string>
+    <string name="msg_type_email_or_p">Type email or phone number</string>
+    <string name="msg_here_to_begin">Begin Exploring.</string>
+    <string name="lbl_login">Login</string>
+    <string name="lbl_sarang_pande">Sarang Pande</string>
+    <string name="lbl_hi_User">Hi, User !</string>
+    <string name="lbl_search_route">Search Route</string>
+    <string name="lbl_plan_your_route">Plan your route</string>
+    <string name="lbl_source_station">Source Station</string>
+    <string name="lbl_book_ticket">Book Ticket !</string>
+    <string name="lbl_welcome_back">welcome back !</string>
+    <string name="lbl_sign_up">Sign up</string>
+    <string name="lbl_password">Password...</string>
+    <string name="lbl_metro_card">Metro card</string>
+    <string name="lbl_4km">4km</string>
+    <string name="lbl_3km">3km</string>
+    <string name="msg_destination_sta">Destination Station</string>
+    <string name="lbl_6km">6km</string>
+    <string name="lbl_passanger">Passanger</string>
+    <string name="lbl">&#1049259;</string>
+    <string name="lbl_leonard_cotte">Leonard Cotte</string>
+    <string name="lbl_5km">5km</string>
+    <string name="msg_login_into_your">Login into your account</string>
+    <string name="msg_start_your_jour">Start your journey !</string>
+    <string name="user">Username.. !</string>
+    <string name="pass">Password.. !</string>
+    <string name="or_sign_in_with">or sign in with</string>
+    <string name="sign_in">Sign in</string>
+    <string name="login_in">LOGIN</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="or_sign_in_with_">or sign in with</string>
+    <string name="google_icon">Google</string>
+    <string name="facebook_icon">facebook</string>
+    <string name="twitter_icon">twitter</string>
+    <string name="user_icon">User_icon</string>
+
+
+</resources>
